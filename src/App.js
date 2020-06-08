@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+import styles from './App.module.css';
 
 import { CardList } from "./components/card-list/card-list.component";
 import { SearchBox } from './components/search-box/search-box.component';
@@ -31,7 +31,7 @@ class App extends Component {
       m.name.toLowerCase().includes(searchField.toLowerCase()));
 
     return (
-      <div className="App">
+      <div className={styles.App}>
         <h1> Monsters Rolodex </h1>
         <SearchBox 
           placeholder="Search Monsters"
